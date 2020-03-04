@@ -198,7 +198,7 @@ func validateGenerateFlags() {
 
 	// fix up the filename if it ends with .html
 	if strings.HasSuffix(reportFileName, ".html") {
-		reportFileName = strings.ReplaceAll(reportFileName, ".html", "")
+		reportFileName = strings.Replace(reportFileName, ".html", "")
 	}
 
 	// check if ignore errors and filter status codes are on
